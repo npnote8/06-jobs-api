@@ -44,16 +44,16 @@ Email Validation Regex
 
 #### Mongoose Errors
 
-- Validation Errors
-- Duplicate (Email)
-- Cast Error
+- Validation Errors // if the user doesn't provide one of the values
+- Duplicate (Email) // email is unique
+- Cast Error // when id syntax doesn't match exactly to what mongoose is looking for
 
 #### Security
 
-- helmet
-- cors
-- xss-clean
-- express-rate-limit
+- helmet // sets headers on your HTML pages to limit what script the pages will load
+- cors // to make api accessible to the public (cross-origin resource sharing)
+- xss-clean // protects from cross-site scripting attacks where the attacker tries to inject some malicious code
+- express-rate-limit // to limit the amount of requests the user can make
 
 Swagger UI
 
